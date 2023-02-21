@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  WelcomeView.swift
 //  WineCellar
 //
 //  Created by Shashaank Shankar on 2/20/23.

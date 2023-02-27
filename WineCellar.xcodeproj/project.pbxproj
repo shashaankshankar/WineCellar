@@ -13,6 +13,7 @@
 		FB96904A29A47FC8002BA9DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB96904929A47FC8002BA9DF /* Preview Assets.xcassets */; };
 		FB96905E29A495EF002BA9DF /* WineGlassGIF - Transparent.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FB96905D29A495EF002BA9DF /* WineGlassGIF - Transparent.mp4 */; };
 		FB96906029A542B1002BA9DF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96905F29A542B1002BA9DF /* HomeView.swift */; };
+		FB9690B729AD1976002BA9DF /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9690B629AD1976002BA9DF /* TabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		FB96904929A47FC8002BA9DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB96905D29A495EF002BA9DF /* WineGlassGIF - Transparent.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WineGlassGIF - Transparent.mp4"; path = "../../../WineGlassGIF - Transparent.mp4"; sourceTree = "<group>"; };
 		FB96905F29A542B1002BA9DF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FB9690B629AD1976002BA9DF /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				FB96904429A47FC7002BA9DF /* WelcomeView.swift */,
 				FB96905F29A542B1002BA9DF /* HomeView.swift */,
+				FB9690B629AD1976002BA9DF /* TabView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				FB96906029A542B1002BA9DF /* HomeView.swift in Sources */,
 				FB96904529A47FC7002BA9DF /* WelcomeView.swift in Sources */,
+				FB9690B729AD1976002BA9DF /* TabView.swift in Sources */,
 				FB96904329A47FC7002BA9DF /* WineCellarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

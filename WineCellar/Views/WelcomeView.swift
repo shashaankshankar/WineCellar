@@ -66,7 +66,7 @@ struct WelcomeView_Previews: PreviewProvider {
 
 func goHome() {
     if let window = UIApplication.shared.windows.first {
-            window.rootViewController = UIHostingController(rootView: HomeView())
+            window.rootViewController = UIHostingController(rootView: TabBarView())
             window.makeKeyAndVisible()
     }
 }

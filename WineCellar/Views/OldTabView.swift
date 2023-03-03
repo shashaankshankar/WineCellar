@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct OldTabView: View {
     var body: some View {
         VStack {
             // MARK: Content
@@ -34,9 +34,9 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct OldTabView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        OldTabView()
     }
 }
 

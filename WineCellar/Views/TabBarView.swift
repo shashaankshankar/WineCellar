@@ -25,7 +25,7 @@ struct TabBarView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            Text("home")
+            HomeView()
                 .tabItem({
                     Label("Home", systemImage: "house")
                 })

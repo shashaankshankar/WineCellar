@@ -9,19 +9,17 @@ import Foundation
 import SwiftUI
 
 struct WineBottle: Hashable, Codable {
-    private var id: Int
-    private var wineryName: String // winery company name
-    private var vintage: Int // year grapes were harvested
-    private var region: String // location harvested from
-    private var type: String // red, white, rosé, dessert, sparkling
-    private var variety: String // pinot noir, chardonnay, etc.
-    private var name: String // full name
-    private var description: String
-    private var price: Int
+    var id: Int
+    var wineryName: String // winery company name
+    var vintage: Int // year grapes were harvested
+    var region: String // location harvested from
+    var type: String // red, white, rosé, dessert, sparkling
+    var variety: String // pinot noir, chardonnay, etc.
+    var name: String // full name
+    var description: String
+    var price: Int
     private var imageName: String
     var image: Image {
         Image(imageName)
     }
-    
-    
 }

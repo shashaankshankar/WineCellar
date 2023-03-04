@@ -37,7 +37,7 @@ struct TabBarView: View {
                 })
                 .tag("search")
             
-            Text("wine glass")
+            Text("wine")
                 .tabItem({
                     Label("Wine", systemImage: "wineglass")
                 })

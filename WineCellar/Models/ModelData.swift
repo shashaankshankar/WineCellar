@@ -7,7 +7,7 @@
 
 import Foundation
 
-var wineBottle: [WineBottle] = load("wineBottleData.json")
+var wineBottles: [WineBottle] = load("wineBottleData.json")
 
 /**
  * Fetches JSON data with a given name from the app's main bundle. This method relies on the return

@@ -8,13 +8,76 @@
 import SwiftUI
 
 struct WineCard: View {
+    var wineBottle: WineBottle
+    var cardWidth: CGFloat = 350
+    var cardHeight: CGFloat = 300
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Rectangle()
+                .fill(Color("WineCardDarkBackground"))
+                .frame(width: cardWidth, height: cardHeight)
+                .cornerRadius(25)
+            Rectangle()
+                .fill(Color("WineCardLightBackground"))
+                .frame(width: (cardWidth - 20), height: (cardHeight - 20))
+                .cornerRadius(15)
+                .shadow(radius: 1)
+            
+            HStack {
+                Spacer()
+                
+                wineBottle.image
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 100, height: 225)
+                    .shadow(radius: 5)
+                
+                Spacer()
+                
+                ZStack {
+                    Rectangle()
+                        .fill(Color("WineCardLighterBackground"))
+                        .frame(width: 210, height: cardHeight - 40)
+                        .cornerRadius(15)
+                        .shadow(radius: 2)
+                    VStack {
+                        Text(wineBottle.type + " Wine")
+                            .frame(width: 200, alignment: .trailing)
+                            //.border(.green)
+                            .font(.system(size: 13, weight: .light, design: .default))
+                        Text(wineBottle.wineryName)
+                            .frame(width: 200)
+                            //.border(.green)
+                            .font(.system(size: 17, weight: .regular, design: .serif))
+                        Text(wineBottle.variety)
+                            .frame(width: 200, alignment: .trailing)
+                            //.border(.green)
+                            .font(.system(size: 15, weight: .light, design: .serif))
+                        Spacer()
+                        Text(wineBottle.description)
+                            .frame(width: 200, alignment: .trailing)
+                            //.border(.green)
+                            .font(.system(size: 14, weight: .thin, design: .default))
+                        Spacer()
+                        Text("$" + String(wineBottle.price))
+                            .frame(width: 200, alignment: .trailing)
+                            //.border(.green)
+                            .font(.system(size: 17, weight: .semibold, design: .serif))
+                    }
+                    .frame(width: 200, height: 250)
+                }
+                //.border(.red)
+                
+                Spacer()
+            }
+            .frame(width: (cardWidth - 50), height: (cardHeight - 50))
+        }
     }
 }
 
 struct WineCard_Previews: PreviewProvider {
     static var previews: some View {
-        WineCard()
+        WineCard(wineBottle: wineBottles[0])
     }
 }

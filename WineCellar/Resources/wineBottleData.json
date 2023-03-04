@@ -1,12 +1,14 @@
 [
     {
+        "id": 0,
         "wineryName": "Joseph Phelps Vineyards",
         "vintage": 2018,
         "region": "Napa Valley",
         "type": "Red",
         "variety": "Cabernet Sauvignon",
+        "name": "2018 Joseph Phelps Vineyards Cabernet Sauvignon",
         "description": "A wine of great energy, length, and finesse, 2018 Cabernet Sauvignon opens with floral notes, cedar and pencil shavings followed by ripe blackberry, cassis and red currant jam.",
         "price": 110,
-        "imageName": "Joseph Phelps Vineyards Cabernet Sauvignon 2018"
+        "imageName": "2018 Joseph Phelps Vineyards Cabernet Sauvignon"
     }
 ]

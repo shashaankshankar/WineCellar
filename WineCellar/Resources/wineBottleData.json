@@ -4,11 +4,25 @@
         "wineryName": "Joseph Phelps Vineyards",
         "vintage": 2018,
         "region": "Napa Valley",
+        "country": "California",
         "type": "Red",
         "variety": "Cabernet Sauvignon",
         "name": "2018 Joseph Phelps Vineyards Cabernet Sauvignon",
         "description": "A wine of great energy, length, and finesse, 2018 Cabernet Sauvignon opens with floral notes, cedar and pencil shavings followed by ripe blackberry, cassis and red currant jam.",
         "price": 110,
         "imageName": "2018 Joseph Phelps Vineyards Cabernet Sauvignon"
+    },
+    {
+        "id": 1,
+        "wineryName": "Adrianna Vineyard",
+        "vintage": 2016,
+        "region": "Gualtallary",
+        "country": "Argentina",
+        "type": "Red",
+        "variety": "Malbec",
+        "name": "2016 Adrianna Vineyard Malbec",
+        "description": "A wine from Fortuna Terrae which means luck of the land in Latin. Because of the freshness imparted by the deep soils and high altitude, the wines of Fortuna Terrae have optimal acidity and delicate flower aromas.",
+        "price": 135,
+        "imageName": "2016 Adrianna Vineyard Malbec"
     }
 ]

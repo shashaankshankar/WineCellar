@@ -9,7 +9,10 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        WineCard(wineBottle: wineBottles[0])
+        VStack{
+            WineCard(wineBottle: wineBottles[0])
+            WineCard(wineBottle: wineBottles[1])
+        }
     }
 }
 

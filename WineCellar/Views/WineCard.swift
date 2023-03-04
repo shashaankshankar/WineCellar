@@ -20,8 +20,8 @@ struct WineCard: View {
                 .cornerRadius(25)
             Rectangle()
                 .fill(Color("WineCardLightBackground"))
-                .frame(width: (cardWidth - 20), height: (cardHeight - 20))
-                .cornerRadius(15)
+                .frame(width: (cardWidth - 10), height: (cardHeight - 10))
+                .cornerRadius(20)
                 .shadow(radius: 1)
             
             HStack {
@@ -38,8 +38,8 @@ struct WineCard: View {
                 ZStack {
                     Rectangle()
                         .fill(Color("WineCardLighterBackground"))
-                        .frame(width: 210, height: cardHeight - 40)
-                        .cornerRadius(15)
+                        .frame(width: 210, height: cardHeight - 30)
+                        .cornerRadius(10)
                         .shadow(radius: 2)
                     VStack {
                         Text(wineBottle.type + " Wine")
@@ -47,18 +47,19 @@ struct WineCard: View {
                             //.border(.green)
                             .font(.system(size: 13, weight: .light, design: .default))
                         Text(wineBottle.wineryName)
-                            .frame(width: 200)
-                            //.border(.green)
-                            .font(.system(size: 17, weight: .regular, design: .serif))
-                        Text(wineBottle.variety)
                             .frame(width: 200, alignment: .trailing)
                             //.border(.green)
-                            .font(.system(size: 15, weight: .light, design: .serif))
+                            .font(.system(size: 16, weight: .regular, design: .serif))
+                        Text(String(wineBottle.vintage) + " - " + wineBottle.variety)
+                            .frame(width: 200, alignment: .trailing)
+                            //.border(.green)
+                            .font(.system(size: 14, weight: .light, design: .serif))
                         Spacer()
                         Text(wineBottle.description)
-                            .frame(width: 200, alignment: .trailing)
+                            .frame(width: 200, alignment: .center)
                             //.border(.green)
                             .font(.system(size: 14, weight: .thin, design: .default))
+                            .italic()
                         Spacer()
                         Text("$" + String(wineBottle.price))
                             .frame(width: 200, alignment: .trailing)
@@ -66,8 +67,8 @@ struct WineCard: View {
                             .font(.system(size: 17, weight: .semibold, design: .serif))
                     }
                     .frame(width: 200, height: 250)
+                    //.border(.red)
                 }
-                //.border(.red)
                 
                 Spacer()
             }
@@ -78,6 +79,9 @@ struct WineCard: View {
 
 struct WineCard_Previews: PreviewProvider {
     static var previews: some View {
-        WineCard(wineBottle: wineBottles[0])
+        Group {
+            WineCard(wineBottle: wineBottles[0])
+            WineCard(wineBottle: wineBottles[1])
+        }
     }
 }

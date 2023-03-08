@@ -26,13 +26,18 @@ struct WineCard: View {
             
             HStack {
                 Spacer()
-                
+                                
+                /* [!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]
+                 * Need to work on what happens if image is not the right size for '.fill'
+                 */
                 wineBottle.image
                     .resizable()
-                    .scaledToFill()
-                    .frame(width: 100, height: 225)
+                    .interpolation(.medium)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 100, height: 225, alignment: .center)
+                    //.border(.green)
                     .shadow(radius: 5)
-                
+                 
                 Spacer()
                 
                 ZStack {
@@ -45,7 +50,7 @@ struct WineCard: View {
                         Text(wineBottle.type + " Wine")
                             .frame(width: 200, alignment: .trailing)
                             //.border(.green)
-                            .font(.system(size: 13, weight: .light, design: .default))
+                            .font(.system(size: 14, weight: .light, design: .rounded))
                         Text(wineBottle.wineryName)
                             .frame(width: 200, alignment: .trailing)
                             //.border(.green)
@@ -53,7 +58,7 @@ struct WineCard: View {
                         Text(String(wineBottle.vintage) + " - " + wineBottle.variety)
                             .frame(width: 200, alignment: .trailing)
                             //.border(.green)
-                            .font(.system(size: 14, weight: .light, design: .serif))
+                            .font(.system(size: 15, weight: .light, design: .default))
                         Spacer()
                         Text(wineBottle.description)
                             .frame(width: 200, alignment: .center)
@@ -66,7 +71,9 @@ struct WineCard: View {
                             //.border(.green)
                             .font(.system(size: 17, weight: .semibold, design: .serif))
                     }
+                    .padding(.vertical, 10.0)
                     .frame(width: 200, height: 250)
+                    
                     //.border(.red)
                 }
                 
@@ -82,6 +89,7 @@ struct WineCard_Previews: PreviewProvider {
         Group {
             WineCard(wineBottle: wineBottles[0])
             WineCard(wineBottle: wineBottles[1])
+            WineCard(wineBottle: wineBottles[2])
         }
     }
 }

@@ -9,7 +9,7 @@ import Foundation
 
 var wineBottles: [WineBottle] = load("wineBottleData.json")
 
-/**
+/*
  * Fetches JSON data with a given name from the app's main bundle. This method relies on the return
  * type’s conformance to the Decodable protocol, which is one component of the Codable protocol.
  */

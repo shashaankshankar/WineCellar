@@ -24,7 +24,6 @@ struct WelcomeView: View {
                 .shadow(color: .gray.opacity(0.3), radius: 10, x: 1, y: -1)
                 .underline()
                 .font(.system(size: 75, weight: .bold, design: .serif))
-                .fontWeight(.bold)
                 .foregroundColor(Color("AccentColor"))
             
             // MARK: Center
@@ -66,7 +65,7 @@ struct WelcomeView_Previews: PreviewProvider {
 
 func goHome() {
     if let window = UIApplication.shared.windows.first {
-            window.rootViewController = UIHostingController(rootView: HomeView())
+            window.rootViewController = UIHostingController(rootView: TabBarView())
             window.makeKeyAndVisible()
     }
 }

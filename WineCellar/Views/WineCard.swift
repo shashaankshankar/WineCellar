@@ -66,10 +66,12 @@ struct WineCard: View {
                             .font(.system(size: 14, weight: .thin, design: .default))
                             .italic()
                         Spacer()
-                        Text("$" + String(wineBottle.price))
-                            .frame(width: 200, alignment: .trailing)
-                            //.border(.green)
+                        HStack {
+                            Text("$" + String(wineBottle.price) + " ›")
+                                .frame(width: 200, alignment: .trailing)
+                                //.border(.green)
                             .font(.system(size: 17, weight: .semibold, design: .serif))
+                        }
                     }
                     .padding(.vertical, 10.0)
                     .frame(width: 200, height: 250)

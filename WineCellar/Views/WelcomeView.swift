@@ -21,16 +21,17 @@ struct WelcomeView: View {
             // MARK: Header
             
             Text("Vineyard")
+                .padding(.bottom, -10.0)
                 .shadow(color: .gray.opacity(0.3), radius: 10, x: 1, y: -1)
                 .underline()
-                .font(.system(size: 75, weight: .bold, design: .serif))
+                .font(.system(size: 75, weight: .semibold, design: .serif))
                 .foregroundColor(Color("AccentColor"))
             
             // MARK: Center
             
             VideoPlayer(player: wineGlassPlayer)
-                .scaledToFit()
-                .frame(width: 300, height: 300)
+                .scaledToFill()
+                .frame(width: 400, height: 400)
                 .disabled(true)
                 .onAppear() {
                     wineGlassPlayer.isMuted = true

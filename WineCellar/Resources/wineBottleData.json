@@ -14,32 +14,6 @@
     },
     {
         "id": 1,
-        "wineryName": "Adrianna Vineyard",
-        "vintage": 2016,
-        "region": "Gualtallary",
-        "country": "Argentina",
-        "type": "Red",
-        "variety": "Malbec",
-        "name": "Adrianna Vineyard Malbec 2016",
-        "description": "A wine from Fortuna Terrae which means luck of the land in Latin. Because of the freshness imparted by the deep soils and high altitude, the wines of Fortuna Terrae have optimal acidity and delicate flower aromas.",
-        "price": 135,
-        "imageName": "Adrianna Vineyard Malbec 2016"
-    },
-    {
-        "id": 2,
-        "wineryName": "Wayfarer Vineyard",
-        "vintage": 2014,
-        "region": "Sonoma Coast",
-        "country": "California",
-        "type": "Red",
-        "variety": "Pinot Noir",
-        "name": "Wayfarer Vineyard Pinot Noir 2014",
-        "description": "This ruby-hued wine begins with delicate floral notes that lead into bright red fruit aromas with hints of powdered cocoa and the suggestion of an ocean breeze.",
-        "price": 95,
-        "imageName": "Wayfarer Vineyard Pinot Noir 2014"
-    },
-    {
-        "id": 3,
         "wineryName": "Cloudy Bay",
         "vintage": 2019,
         "region": "Marlborough",
@@ -52,7 +26,7 @@
         "imageName": "Cloudy Bay Sauvignon Blanc 2019"
     },
     {
-        "id": 4,
+        "id": 2,
         "wineryName": "Grgich Hills Estate",
         "vintage": 2016,
         "region": "Nappa Valley",
@@ -63,5 +37,31 @@
         "description": "This wine opens with fresh lemon and orange aromas followed by more subtle notes of lemon zest and a hue of marzipan.",
         "price": 45,
         "imageName": "Grgich Hills Estate Chardonnay 2016"
+    },
+    {
+        "id": 3,
+        "wineryName": "Adrianna Vineyard",
+        "vintage": 2016,
+        "region": "Gualtallary",
+        "country": "Argentina",
+        "type": "Red",
+        "variety": "Malbec",
+        "name": "Adrianna Vineyard Malbec 2016",
+        "description": "A wine from Fortuna Terrae which means luck of the land in Latin. Because of the freshness imparted by the deep soils and high altitude, the wines of Fortuna Terrae have optimal acidity and delicate flower aromas.",
+        "price": 135,
+        "imageName": "Adrianna Vineyard Malbec 2016"
+    },
+    {
+        "id": 4,
+        "wineryName": "Wayfarer Vineyard",
+        "vintage": 2014,
+        "region": "Sonoma Coast",
+        "country": "California",
+        "type": "Red",
+        "variety": "Pinot Noir",
+        "name": "Wayfarer Vineyard Pinot Noir 2014",
+        "description": "This ruby-hued wine begins with delicate floral notes that lead into bright red fruit aromas with hints of powdered cocoa and the suggestion of an ocean breeze.",
+        "price": 95,
+        "imageName": "Wayfarer Vineyard Pinot Noir 2014"
     }
 ]

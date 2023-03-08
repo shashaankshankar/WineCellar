@@ -30,8 +30,9 @@ struct TabBarView: View {
                     Label("Home", systemImage: "house")
                 })
                 .tag("home")
+                .toolbarBackground(Color.white, for: .tabBar)
             
-            Text("search")
+            SearchView()
                 .tabItem({
                     Label("Search", systemImage: "magnifyingglass")
                 })
@@ -51,10 +52,11 @@ struct TabBarView: View {
             
             Text("settings")
                 .tabItem({
-                    Label("Settings", systemImage: "line.3.horizontal")
+                    Label("Settings", systemImage: "gear")
                 })
                 .tag("settings")
         }
+        
     }
 }
 

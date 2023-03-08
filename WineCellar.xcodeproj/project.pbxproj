@@ -12,8 +12,13 @@
 		FB96904729A47FC8002BA9DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB96904629A47FC8002BA9DF /* Assets.xcassets */; };
 		FB96904A29A47FC8002BA9DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB96904929A47FC8002BA9DF /* Preview Assets.xcassets */; };
 		FB96905E29A495EF002BA9DF /* WineGlassGIF - Transparent.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FB96905D29A495EF002BA9DF /* WineGlassGIF - Transparent.mp4 */; };
-		FB96906029A542B1002BA9DF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96905F29A542B1002BA9DF /* HomeView.swift */; };
-		FB9690B729AD1976002BA9DF /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9690B629AD1976002BA9DF /* TabView.swift */; };
+		FB96906029A542B1002BA9DF /* OldTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96905F29A542B1002BA9DF /* OldTabView.swift */; };
+		FB9690B729AD1976002BA9DF /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9690B629AD1976002BA9DF /* TabBarView.swift */; };
+		FBC10D1129AD49860006CA67 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC10D1029AD49860006CA67 /* HomeView.swift */; };
+		FBC10D1329B29A760006CA67 /* WineBottle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC10D1229B29A760006CA67 /* WineBottle.swift */; };
+		FBC10D1529B29EC90006CA67 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC10D1429B29EC90006CA67 /* ModelData.swift */; };
+		FBC10D1729B2AFD70006CA67 /* wineBottleData.json in Resources */ = {isa = PBXBuildFile; fileRef = FBC10D1629B2AFD70006CA67 /* wineBottleData.json */; };
+		FBC10D1929B2BA090006CA67 /* WineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC10D1829B2BA090006CA67 /* WineCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +28,13 @@
 		FB96904629A47FC8002BA9DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB96904929A47FC8002BA9DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB96905D29A495EF002BA9DF /* WineGlassGIF - Transparent.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WineGlassGIF - Transparent.mp4"; path = "../../../WineGlassGIF - Transparent.mp4"; sourceTree = "<group>"; };
-		FB96905F29A542B1002BA9DF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		FB9690B629AD1976002BA9DF /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		FB96905F29A542B1002BA9DF /* OldTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldTabView.swift; sourceTree = "<group>"; };
+		FB9690B629AD1976002BA9DF /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		FBC10D1029AD49860006CA67 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FBC10D1229B29A760006CA67 /* WineBottle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineBottle.swift; sourceTree = "<group>"; };
+		FBC10D1429B29EC90006CA67 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		FBC10D1629B2AFD70006CA67 /* wineBottleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wineBottleData.json; sourceTree = "<group>"; };
+		FBC10D1829B2BA090006CA67 /* WineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +67,9 @@
 		FB96904129A47FC7002BA9DF /* WineCellar */ = {
 			isa = PBXGroup;
 			children = (
-				FB96906329A556EB002BA9DF /* Utilities */,
-				FB96906229A556DB002BA9DF /* Screens */,
-				FB96906129A556D0002BA9DF /* Views */,
+				FB96906329A556EB002BA9DF /* Models */,
+				FB96906229A556DB002BA9DF /* Views */,
+				FB96906129A556D0002BA9DF /* Resources */,
 				FB96904229A47FC7002BA9DF /* WineCellarApp.swift */,
 				FB96904629A47FC8002BA9DF /* Assets.xcassets */,
 				FB96905D29A495EF002BA9DF /* WineGlassGIF - Transparent.mp4 */,
@@ -76,28 +86,33 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FB96906129A556D0002BA9DF /* Views */ = {
+		FB96906129A556D0002BA9DF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FBC10D1629B2AFD70006CA67 /* wineBottleData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FB96906229A556DB002BA9DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB96904429A47FC7002BA9DF /* WelcomeView.swift */,
+				FB96905F29A542B1002BA9DF /* OldTabView.swift */,
+				FB9690B629AD1976002BA9DF /* TabBarView.swift */,
+				FBC10D1029AD49860006CA67 /* HomeView.swift */,
+				FBC10D1829B2BA090006CA67 /* WineCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		FB96906229A556DB002BA9DF /* Screens */ = {
+		FB96906329A556EB002BA9DF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FB96904429A47FC7002BA9DF /* WelcomeView.swift */,
-				FB96905F29A542B1002BA9DF /* HomeView.swift */,
-				FB9690B629AD1976002BA9DF /* TabView.swift */,
+				FBC10D1229B29A760006CA67 /* WineBottle.swift */,
+				FBC10D1429B29EC90006CA67 /* ModelData.swift */,
 			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		FB96906329A556EB002BA9DF /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB96904A29A47FC8002BA9DF /* Preview Assets.xcassets in Resources */,
+				FBC10D1729B2AFD70006CA67 /* wineBottleData.json in Resources */,
 				FB96904729A47FC8002BA9DF /* Assets.xcassets in Resources */,
 				FB96905E29A495EF002BA9DF /* WineGlassGIF - Transparent.mp4 in Resources */,
 			);
@@ -171,10 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB96906029A542B1002BA9DF /* HomeView.swift in Sources */,
+				FBC10D1329B29A760006CA67 /* WineBottle.swift in Sources */,
+				FB96906029A542B1002BA9DF /* OldTabView.swift in Sources */,
 				FB96904529A47FC7002BA9DF /* WelcomeView.swift in Sources */,
-				FB9690B729AD1976002BA9DF /* TabView.swift in Sources */,
+				FB9690B729AD1976002BA9DF /* TabBarView.swift in Sources */,
+				FBC10D1129AD49860006CA67 /* HomeView.swift in Sources */,
 				FB96904329A47FC7002BA9DF /* WineCellarApp.swift in Sources */,
+				FBC10D1929B2BA090006CA67 /* WineCard.swift in Sources */,
+				FBC10D1529B29EC90006CA67 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

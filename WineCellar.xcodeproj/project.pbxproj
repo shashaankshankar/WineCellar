@@ -20,6 +20,8 @@
 		FBC10D1729B2AFD70006CA67 /* wineBottleData.json in Resources */ = {isa = PBXBuildFile; fileRef = FBC10D1629B2AFD70006CA67 /* wineBottleData.json */; };
 		FBC10D1929B2BA090006CA67 /* WineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC10D1829B2BA090006CA67 /* WineCard.swift */; };
 		FBD06BCB29B860B200F473DC /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD06BCA29B860B200F473DC /* SearchView.swift */; };
+		FBD06BCD29B92B7500F473DC /* WineCardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD06BCC29B92B7500F473DC /* WineCardDetail.swift */; };
+		FBD06BCF29BE67DB00F473DC /* MapSnapshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD06BCE29BE67DB00F473DC /* MapSnapshotView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		FBC10D1629B2AFD70006CA67 /* wineBottleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wineBottleData.json; sourceTree = "<group>"; };
 		FBC10D1829B2BA090006CA67 /* WineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineCard.swift; sourceTree = "<group>"; };
 		FBD06BCA29B860B200F473DC /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		FBD06BCC29B92B7500F473DC /* WineCardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineCardDetail.swift; sourceTree = "<group>"; };
+		FBD06BCE29BE67DB00F473DC /* MapSnapshotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSnapshotView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				FBC10D1029AD49860006CA67 /* HomeView.swift */,
 				FBC10D1829B2BA090006CA67 /* WineCard.swift */,
 				FBD06BCA29B860B200F473DC /* SearchView.swift */,
+				FBD06BCC29B92B7500F473DC /* WineCardDetail.swift */,
+				FBD06BCE29BE67DB00F473DC /* MapSnapshotView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBC10D1329B29A760006CA67 /* WineBottle.swift in Sources */,
+				FBD06BCF29BE67DB00F473DC /* MapSnapshotView.swift in Sources */,
 				FBD06BCB29B860B200F473DC /* SearchView.swift in Sources */,
 				FB96906029A542B1002BA9DF /* OldTabView.swift in Sources */,
 				FB96904529A47FC7002BA9DF /* WelcomeView.swift in Sources */,
@@ -199,6 +206,7 @@
 				FB96904329A47FC7002BA9DF /* WineCellarApp.swift in Sources */,
 				FBC10D1929B2BA090006CA67 /* WineCard.swift in Sources */,
 				FBC10D1529B29EC90006CA67 /* ModelData.swift in Sources */,
+				FBD06BCD29B92B7500F473DC /* WineCardDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,7 +35,6 @@ struct WineCard: View {
                     .interpolation(.medium)
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 100, height: 225, alignment: .center)
-                    //.border(.green)
                     .shadow(radius: 5)
                  
                 Spacer()
@@ -49,34 +48,27 @@ struct WineCard: View {
                     VStack {
                         Text(wineBottle.type + " Wine")
                             .frame(width: 200, alignment: .trailing)
-                            //.border(.green)
                             .font(.system(size: 14, weight: .light, design: .rounded))
                         Text(wineBottle.wineryName)
                             .frame(width: 200, alignment: .trailing)
-                            //.border(.green)
                             .font(.system(size: 16, weight: .regular, design: .serif))
                         Text(String(wineBottle.vintage) + " - " + wineBottle.variety)
                             .frame(width: 200, alignment: .trailing)
-                            //.border(.green)
                             .font(.system(size: 15, weight: .light, design: .default))
                         Spacer()
                         Text(wineBottle.description)
                             .frame(width: 200, alignment: .center)
-                            //.border(.green)
                             .font(.system(size: 14, weight: .thin, design: .default))
                             .italic()
                         Spacer()
                         HStack {
                             Text("$" + String(wineBottle.price) + " ›")
                                 .frame(width: 200, alignment: .trailing)
-                                //.border(.green)
                             .font(.system(size: 17, weight: .semibold, design: .serif))
                         }
                     }
                     .padding(.vertical, 10.0)
                     .frame(width: 200, height: 250)
-                    
-                    //.border(.red)
                 }
                 
                 Spacer()

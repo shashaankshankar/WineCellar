@@ -7,37 +7,6 @@
 
 import SwiftUI
 
-/*
- 
-     ZStack {
-         Rectangle()
-             .fill(.gray)
-             .shadow(radius: 3)
-         Text("Vineyard")
-             .shadow(color: .gray.opacity(0.3), radius: 5)
-             .underline()
-             .font(.system(size: 45, weight: .bold, design: .serif))
-         .foregroundColor(Color("AccentColor"))
-     }
-     .frame(height: 100)
- */
-
-/*
- Rectangle()
-     .fill(.white)
-     .shadow(radius: 1)
-     .overlay(
-         Text("Vineyard")
-             .padding(.bottom, 15.0)
-             .font(.system(size: 45, weight: .bold, design: .serif))
-             .shadow(color: .gray.opacity(0.3), radius: 1)
-             .underline()
-             .foregroundColor(Color("AccentColor"))
-             .frame(width: geo.size.width, height: geo.size.height, alignment: .bottom)
-     )
-     .offset(y: -geo.frame(in: .global).origin.y) // keeps it fixed at top
-*/
-
 struct HomeView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false, content: {

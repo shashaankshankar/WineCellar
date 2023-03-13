@@ -63,5 +63,31 @@
         "description": "This ruby-hued wine begins with delicate floral notes that lead into bright red fruit aromas with hints of powdered cocoa and the suggestion of an ocean breeze.",
         "price": 95,
         "imageName": "Wayfarer Vineyard Pinot Noir 2014"
+    },
+    {
+        "id": 5,
+        "wineryName": "Avalon Lodi",
+        "vintage": 2020,
+        "region": "Lodi",
+        "country": "California",
+        "type": "Red",
+        "variety": "Cabernet Sauvignon",
+        "name": "Avalon Lodi Cabernet Sauvignon 2020",
+        "description": "Juicy aromas of dark fruit, mocha and spice meet with hints of vanilla. On the palate,black cherry, red raspberry and plum are followed by a long, smooth finish.",
+        "price": 10,
+        "imageName": "Avalon Lodi Cabernet Sauvignon 2020"
+    },
+    {
+        "id": 6,
+        "wineryName": "Bosco",
+        "vintage": 2018,
+        "region": "Abruzzo",
+        "country": "Italy",
+        "type": "Red",
+        "variety": "Montepulciano",
+        "name": "Bosco Montepulciano 2018",
+        "description": "Aged in oak barrels and refined in the bottle. Ruby red, fine and persistent with scents of black berries and plum jam. Perfect with grilled red meat and aged cheese.",
+        "price": 15,
+        "imageName": "Bosco Montepulciano 2018"
     }
 ]
